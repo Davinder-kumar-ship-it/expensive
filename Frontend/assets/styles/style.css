@@ -1,0 +1,135 @@
+#leftSideBar
+{
+    display:flex;
+    flex-direction:column;
+    background-color: rgb(20, 20, 20);
+    height:100vh;
+    color:rgb(212, 198, 198);
+    width:25vw;
+}
+#menuContainer
+{
+    display:flex;
+    justify-content: space-between;;
+    align-items: center;;
+    background-color:rgb(87, 87, 88);
+    height:6rem;
+}
+.leftMenuImage:hover
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    border-radius: 50%;;
+    height:2rem;
+    width:2rem;
+}
+#menuBox
+{
+    margin-left: 2.1rem;
+}
+#idBox
+{
+    margin-right:2.1rem;
+}
+#menu,#search
+{
+    height:1.5rem;
+    background-color: rgb(87, 87, 87);
+}
+#menu:hover,#search:hover
+{
+    background-color:rgb(231, 219, 219);
+    border-radius:50%;
+}
+#newCategoryBox
+{ 
+    background-color: rgb(87, 87, 87);
+    display:flex;
+    justify-content:space-between;
+    height:4rem;
+}
+#newCategory
+{
+    align-self:center;
+    display:flex;
+    align-items:center;
+    font-size:120%;;
+    column-gap: 1rem;
+    border-radius:.9rem;
+    margin-left:2rem;
+    width:80%;
+    height:50%
+}
+#newCategory:hover
+{
+    background-color: rgb(231, 219, 219);
+    color:black;
+}
+#pencil
+{
+    margin-left:0.4rem;
+    height:1.4rem
+}
+#categoriesBox  
+{
+    background-color:rgb(85, 83, 83);
+    height:4rem;
+    font-size:120%;
+    flex-grow:1;
+}
+.categories
+{
+    display:flex;
+    justify-content: space-between;
+    margin-left:2rem;
+    width:80%;
+    height:2rem;
+}
+#categoriesMessage
+{
+    align-self:center;
+    margin-left:0.4rem;
+}
+#submitSymbol
+{
+    align-self:center;
+    margin-right:0.4rem;
+}
+.categories:hover
+{
+    background-color:rgb(231, 219, 219);
+    border-radius:2rem; 
+    color:black;
+}
+#settingBox
+{
+    background-color:rgb(28, 28, 29);
+    height:3rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#setting
+{
+    display:flex;
+    align-items: center;
+    width:80%;
+    font-size:120%;
+    height:60%;
+    column-gap: 1rem;;
+}
+#settingImage
+{
+    margin-left:0.4rem;
+    height:1.2rem;
+}
+#setting:hover
+{
+    background-color: rgb(231, 219, 219);
+    color:black;
+    border-radius:2rem;
+}
+
+
