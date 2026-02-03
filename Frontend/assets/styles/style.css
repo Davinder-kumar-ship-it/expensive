@@ -11,7 +11,7 @@
 {
     display:flex;
     justify-content: space-between;;
-    align-items: center;;
+    align-items: center;
     background-color:rgb(87, 87, 88);
     height:6rem;
 }
