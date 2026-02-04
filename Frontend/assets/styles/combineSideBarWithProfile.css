@@ -1,12 +1,12 @@
 main
 {
     display:flex;    
+    background-color:rgb(46, 42, 42);
 }
 #leftSideBar
 {
     display:flex;
     flex-direction:column;
-    background-color: rgb(20, 20, 20);
     height:100vh;
     color:rgb(212, 198, 198);
     width:25vw;
@@ -16,7 +16,6 @@ main
     display:flex;
     justify-content: space-between;;
     align-items: center;
-    background-color:rgb(87, 87, 88);
     height:6rem;
 }
 .leftMenuImage:hover
@@ -24,7 +23,6 @@ main
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color:white;
     border-radius: 50%;;
     height:2rem;
     width:2rem;
@@ -40,7 +38,6 @@ main
 #menu,#search
 {
     height:1.5rem;
-    background-color: rgb(87, 87, 87);
 }
 #menu:hover,#search:hover
 {
@@ -49,7 +46,6 @@ main
 }
 #newCategoryBox
 { 
-    background-color: rgb(87, 87, 87);
     display:flex;
     justify-content:space-between;
     height:4rem;
@@ -78,7 +74,6 @@ main
 }
 #categoriesBox  
 {
-    background-color:rgb(85, 83, 83);
     height:4rem;
     font-size:120%;
     flex-grow:1;
