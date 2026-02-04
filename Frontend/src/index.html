@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="/Frontend/assets/styles/combineSideBarWithProfile.css" />
     <link rel="stylesheet" href="/Frontend/assets/styles/style.css" />
+    <link rel="stylesheet" href="/Frontend/assets/styles/rightSide.css">
+    <link rel="stylesheet" href="/Frontend/assets/styles/mainBodyCard.css">
 </head>
 
 <body>
@@ -40,7 +42,7 @@
             </div>
         </section>
 
-        <section class="mainBody">
+        <section class="rightSide">
             <div class="mainBodyCard" id="okcreditSection">
                 <div class="okcreditChildElement" id="okcredit">okcredit</div>
                 <div class="okcreditChildElement" id="currentStatus"></div>
@@ -51,8 +53,18 @@
                     <img id="account" src="/Frontend/assets/img/account.png" alt="account" />
                 </div>
             </div>
-        </section>
+            <div class="mainBodyCard" id="profileName">
+                <img class="okcreditImage" src="/Frontend/assets/img/okcredit.png" alt="">
+                <div class="okcreditImage">Hi Davinder</div>
+            </div>
+            <div class="mainBodyCard" id="expensiveMessage">
+                <div id="expensive" >start expensive tracking</div>
+            </div>
+            <div class="mainBodyCard" id="inputBox">
+                <input id="input" type="text" placeholder="Enter category name" >
+                <img id="submitImage" src="/Frontend/assets/img/submit.png" alt="">
+            </div>
+            </section>
     </main>
 </body>
-
 </html>
