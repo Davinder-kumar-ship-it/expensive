@@ -27,10 +27,27 @@ input.addEventListener('keydown',function(e){
             {
                 let div=document.createElement('div');
                 div.setAttribute('class','categories');
-                console.log(div);
-                div.innerText=input.value;
+
                 console.log(div);   
-                document.querySelector('#categoriesBox').appendChild(div);          
+                document.querySelector('#categoriesBox').appendChild(div);       
+       
+                let childDiv=document.createElement('div');
+                childDiv.setAttribute('class','categoriesMessage');
+                childDiv.innerText=value;
+                div.appendChild(childDiv);
+
+
+                childDiv=document.createElement('img');
+                childDiv.setAttribute('class','submitSymbol');
+                childDiv.setAttribute('src','/Frontend/assets/img/threeDot.png');
+                childDiv.innerText=value;
+                div.appendChild(childDiv);
+                // childDiv=document.createElement('div');
+                // childDiv.setAttribute('class','submitSymbol');
+                // childDiv.innerText='...';
+                // div.appendChild(childDiv);
+                 
+
             }
             
         }

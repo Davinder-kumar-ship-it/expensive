@@ -1,3 +1,4 @@
+
 main
 {
     display:flex;    
@@ -14,7 +15,7 @@ main
 #menuContainer
 {
     display:flex;
-    justify-content: space-between;;
+    justify-content: center;;;
     align-items: center;
     height:6rem;
 }
@@ -29,11 +30,10 @@ main
 }
 #menuBox
 {
-    margin-left: 2.1rem;
-}
-#searchBox
-{
-    margin-right:2.1rem;
+    display:flex;
+    justify-content:space-between;
+    max-width:80%;
+    flex-grow:1;
 }
 #menu,#search
 {
@@ -41,13 +41,14 @@ main
 }
 #menu:hover,#search:hover
 {
-    background-color:rgb(231, 219, 219);
+    background-color: var(--hoverBackgroundColor);
     border-radius:50%;
+    border:0.2rem var(--hoverBackgroundColor) solid;
 }
 #newCategoryBox
 { 
     display:flex;
-    justify-content:space-between;
+    justify-content:center;;
     height:4rem;
 }
 #newCategory
@@ -55,16 +56,16 @@ main
     align-self:center;
     display:flex;
     align-items:center;
-    font-size:120%;;
+    flex-grow:1;
+    font-size:1.2rem;
     column-gap: 1rem;
     border-radius:.9rem;
-    margin-left:2rem;
-    width:80%;
+    max-width:85%;
     height:50%
 }
 #newCategory:hover
 {
-    background-color: rgb(231, 219, 219);
+    background-color: var(--hoverBackgroundColor);
     color:black;
 }
 #pencil
@@ -74,38 +75,47 @@ main
 }
 #categoriesBox  
 {
-    height:4rem;
+    display:flex;
+    flex-direction: column;
     font-size:120%;
+    align-items: center;
     flex-grow:1;
 }
 .categories
 {
     display:flex;
-    justify-content: space-around;
-    margin-left:2rem;
-    width:80%;
+    justify-content:space-around;
+    width:85%;
     height:2rem;
+    column-gap: 1rem;;
 }
 .categoriesMessage
 {
+    max-width:75%;;
     flex-grow:1;
     align-self:center;
-    margin-left:0.4rem;
 }
 .submitSymbol
 {
     align-self:center;
-    margin-right:0.4rem;
+    flex-shrink:1;
+    max-width:1.2rem;
+}
+.submitSymbol:hover
+{
+    background-color:white;;
+    border-radius: 50%;
+    color:black;
 }
 .categories:hover
 {
-    background-color:rgb(231, 219, 219);
-    border-radius:2rem; 
+    background-color:var(--hoverBackgroundColor);
+    border-radius:2rem;
     color:black;
 }
 #settingBox
 {
-    background-color:rgb(28, 28, 29);
+    background-color:rgb(31, 29, 29);
     height:3rem;
     display:flex;
     justify-content: center;
@@ -115,7 +125,7 @@ main
 {
     display:flex;
     align-items: center;
-    width:80%;
+    width:85%;
     font-size:120%;
     height:60%;
     column-gap: 1rem;;
@@ -127,7 +137,7 @@ main
 }
 #setting:hover
 {
-    background-color: rgb(231, 219, 219);
+    background-color: var(--hoverBackgroundColor);
     color:black;
     border-radius:2rem;
 }
