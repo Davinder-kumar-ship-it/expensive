@@ -20,7 +20,8 @@ creationOfNewCategory.addEventListener('click',function()
 });
 input.addEventListener('keydown',function(e){
         console.log(input.value);
-        if(e.key==='Enter'){
+        if(e.key==='Enter')
+        {
             let value=input.value;
             console.log("enter");
             if(value.length>0)
@@ -42,21 +43,24 @@ input.addEventListener('keydown',function(e){
                 childDiv.setAttribute('src','/Frontend/assets/img/threeDot.png');
                 childDiv.innerText=value;
                 div.appendChild(childDiv);
-                // childDiv=document.createElement('div');
-                // childDiv.setAttribute('class','submitSymbol');
-                // childDiv.innerText='...';
-                // div.appendChild(childDiv);
-                 
-
+                input.value='';
+                div.setAttribute('id',div.innerText);
+                console.log(div);
             }
             
         }
-    });
-
-let menuBox=document.getElementById('menuBox');
-console.log(menuBox);
-
-menuBox.addEventListener('click',function()
+ });
+let dynamicCategory=document.querySelectorAll('submitSymbol');
+console.log(dynamicCategory);
+document.querySelector('.submitSymbol').addEventListener('click',function(e)
 {
-    document.getElementById('leftSideBar').setAttribute('style','width:10vw');
+   for(let index=1;index<dynamicCategory.length;index++)
+   {
+        let latestObject=dynamicCategory[index];
+        console.log(e.target.id);
+        console.log('davinder kumar');
+   }
+   console.log(e.target.id);
 });
+
+

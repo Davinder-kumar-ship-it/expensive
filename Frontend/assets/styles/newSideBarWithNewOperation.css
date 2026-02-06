@@ -78,6 +78,8 @@ main
     display:flex;
     flex-direction: column;
     font-size:120%;
+    overflow:scroll;
+    overflow-x: hidden;
     align-items: center;
     flex-grow:1;
 }
